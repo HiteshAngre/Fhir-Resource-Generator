@@ -18,7 +18,7 @@ public class PatientController {
 	@Autowired
 	 patientMapper pm;
 	
-	@PostMapping(path = "/patientResource", consumes = "application/json")
+	@PostMapping(path = "/patient", consumes = "application/json")
 	public String patientResource(@RequestBody Patientmodel patient) {
 		return pm.patientmapper(patient);
 	}
