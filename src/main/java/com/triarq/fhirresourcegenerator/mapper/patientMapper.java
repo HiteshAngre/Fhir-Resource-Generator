@@ -198,7 +198,7 @@ public class patientMapper {
 				fhirPatient.addContact(RelativeContact);	
 			}
 		}
-		fhirPatient.setId(IdType.newRandomUuid());		
+// 		fhirPatient.setId(IdType.newRandomUuid());		
 		IParser parser = ctx.newJsonParser();
 		parser.setPrettyPrint(true);
 		String serialized = parser.encodeResourceToString(fhirPatient);
