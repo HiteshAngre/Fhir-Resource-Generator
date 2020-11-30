@@ -28,7 +28,7 @@ public class SwaggerConfig {
                         return "/";
                     }
                 	})
-                	.pathMapping("/fhir");
+                	.pathMapping("/fhirprocessor");
     }
 
 }
